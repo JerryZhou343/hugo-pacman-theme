@@ -13,8 +13,6 @@ Theme = "hugo-pacman-theme"
 pygmentsStyle = "default"
 pygmentsUseClasses = true
 
-[Author]
-  Name = "coderzh"
 
 [outputs]
   home = [ "RSS", "HTML" ]
@@ -25,6 +23,7 @@ pygmentsUseClasses = true
     baseName = "feed"
 
 [Params]
+  AuthorName = "coderzh"
   AuthorHomepage = "https://blog.coderzh.com"
   BottomIntroduce = "Introduce1 <br/> Introduce2"
   Description = ""
