@@ -17,8 +17,8 @@
     -->
   </div>
   <p class="copyright">Powered by <a href="http://gohugo.io" target="_blank" title="hugo">hugo</a> and Theme by <a href="https://github.com/coderzh/hugo-pacman-theme" target="_blank" title="hugo-pacman-theme">hugo-pacman-theme</a> © {{ now.Format "2006" }}
-    {{ if .Site.Author.Name }}
-    <a href="{{ .Site.BaseURL }}" target="_blank" title="{{ .Site.Author.Name }}">{{ .Site.Author.Name }}</a>
+    {{ if .Site.Params.AuthorName }}
+    <a href="{{ .Site.BaseURL }}" target="_blank" title="{{ .Site.Params.AuthorName }}">{{ .Site.Params.AuthorName }}</a>
     {{ else }}
     <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
     {{ end }}

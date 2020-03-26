@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
   {{ if .Keywords }}<meta name="keywords" content="{{ range .Keywords }}{{ . }},{{ end }}">{{ else if eq .URL "/" }}<meta name="keywords" content="{{ .Site.Params.Keywords }}">{{ end }}
   <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Title }}{{ end }}">
-  {{ with .Site.Author.Name }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.AuthorName }}<meta name="author" content="{{ . }}">{{ end }}
   <meta itemprop="name" content="{{ if ne .URL "/" }}{{ .Title }} - {{ end }}{{ .Site.Title }}">
   <meta itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Title }}{{ end }}">
   <meta itemprop="image" content="{{ .Site.BaseURL }}img/author.jpg">
